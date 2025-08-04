@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Adventures: Interactive Phonics Tutorial for Ages 5-6</title>
+    <meta name="description" content="An engaging Open Educational Resource (OER) tutorial designed to teach reading fundamentals to Infants A students (ages 5-6). Features interactive phonics activities, letter recognition games, and systematic reading instruction aligned with early childhood education standards.">
+    <meta name="keywords" content="phonics, reading, early childhood education, kindergarten, OER, interactive learning, letter recognition, educational games">
+    <meta name="author" content="Educational Technology Lab">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Reading Adventures: Interactive Phonics Tutorial">
+    <meta property="og:description" content="Interactive OER tutorial for teaching reading to 5-6 year olds">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    
+    <!-- Accessibility -->
+    <meta name="theme-color" content="#3498DB">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header" role="banner">
+            <h1>🌟 Reading Adventures 🌟</h1>
+            <p class="subtitle">Interactive Phonics Tutorial</p>
+            <div class="age-badge">Ages 5-6 Years</div>
+            <p style="margin-top: 15px; font-size: 1.1em;">Learn letters, sounds, and reading through fun activities!</p>
+        </header>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" role="navigation" aria-label="Tutorial sections">
+            <div class="nav-buttons">
+                <button class="nav-btn active" onclick="showSection('introduction')" aria-pressed="true">
+                    🏠 Introduction
+                </button>
+                <button class="nav-btn" onclick="showSection('letters-az')" aria-pressed="false">
+                    🔤 Letters A-Z
+                </button>
+                <button class="nav-btn" onclick="showSection('sounds')" aria-pressed="false">
+                    🔊 Letter Sounds
+                </button>
+                <button class="nav-btn" onclick="showSection('blending')" aria-pressed="false">
+                    🎯 Word Blending
+                </button>
+                <button class="nav-btn" onclick="showSection('activities')" aria-pressed="false">
+                    🎮 Practice Games
+                </button>
+                <button class="nav-btn" onclick="showSection('assessment')" aria-pressed="false">
+                    📝 Assessment
+                </button>
+            </div>
+        </nav>
+
+        <!-- Introduction Section -->
+        <main>
+            <section id="introduction" class="content-section active" role="main">
+                <h2>Welcome to Reading Adventures!</h2>
+                
+                <div class="objectives-list">
+                    <h4>🎯 What You'll Learn</h4>
+                    <ul role="list">
+                        <li role="listitem">Identify and name all 26 letters of the alphabet (uppercase and lowercase)</li>
+                        <li role="listitem">Recognize and produce the primary sound associated with each letter</li>
+                        <li role="listitem">Blend simple consonant-vowel-consonant (CVC) words like "cat," "dog," and "sun"</li>
+                        <li role="listitem">Demonstrate phonemic awareness through rhyming and sound matching activities</li>
+                    </ul>
+                </div>
+
+                <h3>👋 Hello Young Readers!</h3>
+                <p style="font-size: 1.2em; text-align: center; margin: 20px 0;">
+                    Are you ready to become a reading superhero? This tutorial will help you learn letters, sounds, and how to read your first words!
+                </p>
+
+                <h3>📚 About This Tutorial</h3>
+                <div style="background: #E8F6F3; padding: 20px; border-radius: 15px; margin: 20px 0;">
+                    <p><strong>Target Students:</strong> Infants A students (ages 5-6 years)</p>
+                    <p><strong>Skill Level:</strong> Beginner (no prior reading experience required)</p>
+                    <p><strong>Prerequisites:</strong> Basic listening skills and ability to follow simple instructions</p>
+                    <p><strong>Duration:</strong> Self-paced learning (approximately 2-3 hours total)</p>
+                    <p><strong>Learning Style:</strong> Visual, auditory, and kinesthetic activities</p>
+                </div>
+
+                <h3>🎮 How to Use This Tutorial</h3>
+                <div class="activity-instructions">
+                    <ol style="font-size: 1.1em; line-height: 1.8;">
+                        <li><strong>Start with Letters A-Z:</strong> Learn to recognize each letter</li>
+                        <li><strong>Practice Letter Sounds:</strong> Listen and repeat each sound</li>
+                        <li><strong>Try Word Blending:</strong> Put sounds together to make words</li>
+                        <li><strong>Play Practice Games:</strong> Have fun while learning</li>
+                        <li><strong>Take the Assessment:</strong> Show what you've learned</li>
+                    </ol>
+                </div>
+
+                <h3>🔧 Accessibility Features</h3>
+                <div style="background: #FFF3CD; padding: 20px; border-radius: 15px; margin: 20px 0;">
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li>🔊 <strong>Audio Support:</strong> Click speaker buttons to hear sounds and words</li>
+                        <li>⌨️ <strong>Keyboard Navigation:</strong> Use Tab and Enter keys to navigate</li>
+                        <li>📱 <strong>Mobile Friendly:</strong> Works on tablets and computers</li>
+                        <li>🎨 <strong>Visual Design:</strong> Large, colorful text and buttons</li>
+                        <li>⏱️ <strong>Self-Paced:</strong> Learn at your own speed</li>
+                    </ul>
+                </div>
+
+                <div style="text-align: center; margin: 30px 0;">
+                    <button class="nav-btn" onclick="showSection('letters-az')" style="font-size: 1.3em; padding: 20px 40px;">
+                        🚀 Start Learning!
+                    </button>
+                </div>
+            </section>
+
+            <!-- Letters A-Z Section -->
+            <section id="letters-az" class="content-section" role="main">
+                <h2>🔤 Letters A-Z</h2>
+                <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">
+                    Click on each letter to see it up close and hear its name!
+                </p>
+
+                <div class="letter-grid" role="grid" aria-label="Alphabet letters">
+                    <!-- Letters will be generated by JavaScript -->
+                </div>
+
+                <div class="activity-box">
+                    <h4>🎯 Practice Activity: Letter Hunt</h4>
+                    <div class="activity-instructions">
+                        <p><strong>Instructions:</strong> Look around your room and find objects that start with each letter. For example:</p>
+                        <ul>
+                            <li><strong>A</strong> - Apple, Ant, Airplane</li>
+                            <li><strong>B</strong> - Ball, Book, Banana</li>
+                            <li><strong>C</strong> - Cat, Car, Cookie</li>
+                        </ul>
+                        <p>Can you find something for every letter?</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Letter Sounds Section -->
+            <section id="sounds" class="content-section" role="main">
+                <h2>🔊 Letter Sounds</h2>
+                <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">
+                    Each letter makes a special sound. Click the speaker button to hear each sound!
+                </p>
+
+                <div id="sounds-grid" class="letter-grid" role="grid" aria-label="Letter sounds">
+                    <!-- Sound cards will be generated by JavaScript -->
+                </div>
+
+                <div class="activity-box">
+                    <h4>🎵 Practice Activity: Sound Matching</h4>
+                    <div class="activity-instructions">
+                        <p><strong>Instructions:</strong> Listen to each sound and think of words that start with that sound.</p>
+                        <p><strong>Example:</strong> The letter "M" makes the "mmm" sound like in "Mouse," "Moon," and "Milk."</p>
+                        <p>Try to think of three words for each sound!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Word Blending Section -->
+            <section id="blending" class="content-section" role="main">
+                <h2>🎯 Word Blending</h2>
+                <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">
+                    Now let's put sounds together to make words! This is called "blending."
+                </p>
+
+                <div class="activity-box">
+                    <h4>🔤 How to Blend Words</h4>
+                    <div class="activity-instructions">
+                        <p><strong>Step 1:</strong> Look at the first letter and say its sound</p>
+                        <p><strong>Step 2:</strong> Look at the middle letter and say its sound</p>
+                        <p><strong>Step 3:</strong> Look at the last letter and say its sound</p>
+                        <p><strong>Step 4:</strong> Say all three sounds quickly together!</p>
+                    </div>
+                </div>
+
+                <div id="blending-practice">
+                    <h3 style="text-align: center; color: #3498DB;">Practice Words</h3>
+                    <div class="blending-words" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0;">
+                        <!-- Blending words will be generated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="activity-box">
+                    <h4>🎮 Practice Activity: Word Building</h4>
+                    <div class="activity-instructions">
+                        <p><strong>Instructions:</strong> Try to build these words using letter sounds:</p>
+                        <ul>
+                            <li><strong>CAT:</strong> C + A + T = CAT</li>
+                            <li><strong>DOG:</strong> D + O + G = DOG</li>
+                            <li><strong>SUN:</strong> S + U + N = SUN</li>
+                        </ul>
+                        <p>Practice saying each sound slowly, then quickly together!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Practice Activities Section -->
+            <section id="activities" class="content-section" role="main">
+                <h2>🎮 Practice Games</h2>
+                <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">
+                    Let's play some fun games to practice what you've learned!
+                </p>
+
+                <div class="activity-box">
+                    <h4>🎯 Game 1: Letter Match</h4>
+                    <div class="activity-instructions">
+                        <p><strong>How to Play:</strong> Match the uppercase letter with its lowercase partner!</p>
+                        <div id="letter-match-game" style="margin: 20px 0;">
+                            <!-- Game will be generated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-box">
+                    <h4>🔊 Game 2: Sound Detective</h4>
+                    <div class="activity-instructions">
+                        <p><strong>How to Play:</strong> Listen to the sound and click on the correct letter!</p>
+                        <div id="sound-detective-game" style="margin: 20px 0;">
+                            <!-- Game will be generated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-box">
+                    <h4>🎵 Game 3: Rhyme Time</h4>
+                    <div class="activity-instructions">
+                        <p><strong>How to Play:</strong> Find words that rhyme with the given word!</p>
+                        <div id="rhyme-game" style="margin: 20px 0;">
+                            <!-- Game will be generated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Assessment Section -->
+            <section id="assessment" class="content-section" role="main">
+                <h2>📝 Assessment</h2>
+                <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">
+                    Let's see how much you've learned! Don't worry - this is just for fun!
+                </p>
+
+                <div class="progress-container">
+                    <h4>Your Progress</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill" style="width: 0%;">0%</div>
+                    </div>
+                    <p id="progress-text">Ready to start!</p>
+                </div>
+
+                <div class="quiz-container" id="quiz-container">
+                    <!-- Quiz questions will be generated by JavaScript -->
+                </div>
+
+                <div style="text-align: center; margin: 30px 0;">
+                    <button id="start-quiz-btn" class="nav-btn" onclick="startQuiz()" style="font-size: 1.3em; padding: 20px 40px;">
+                        🎯 Start Assessment
+                    </button>
+                    <button id="next-question-btn" class="nav-btn" onclick="nextQuestion()" style="display: none; font-size: 1.3em; padding: 20px 40px;">
+                        ➡️ Next Question
+                    </button>
+                </div>
+
+                <div id="results-container" style="display: none;">
+                    <div class="activity-box">
+                        <h4>🎉 Great Job!</h4>
+                        <div class="activity-instructions">
+                            <p id="final-score"></p>
+                            <p>Keep practicing and you'll become an amazing reader!</p>
+                            <div style="text-align: center; margin: 20px 0;">
+                                <button class="nav-btn" onclick="restartQuiz()">🔄 Try Again</button>
+                                <button class="nav-btn" onclick="showSection('introduction')">🏠 Back to Start</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer style="text-align: center; margin: 40px 0; padding: 20px; background: rgba(255,255,255,0.8); border-radius: 15px;">
+            <h3>📚 About This OER</h3>
+            <p><strong>Title:</strong> Reading Adventures: Interactive Phonics Tutorial for Ages 5-6</p>
+            <p><strong>Created by:</strong> Educational Technology Lab</p>
+            <p><strong>License:</strong> <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-ShareAlike 4.0 International</a></p>
+            <p><strong>Target Audience:</strong> Infants A students (ages 5-6), Early childhood educators, Parents</p>
+            <p><strong>Subject:</strong> Early Childhood Education - Reading and Phonics</p>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #7F8C8D;">
+                This Open Educational Resource (OER) is designed for submission to MERLOT.org and free distribution to educators worldwide.
+            </p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
